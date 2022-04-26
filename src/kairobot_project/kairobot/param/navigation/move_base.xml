@@ -1,0 +1,10 @@
+<launch>
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+	<rosparam file="$(find kairobot)/param/navigation/$(env KAIBASE)/costmap_common_params.yaml" command="load" ns="global_costmap" />
+	<rosparam file="$(find kairobot)/param/navigation/$(env KAIBASE)/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find kairobot)/param/navigation/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find kairobot)/param/navigation/global_costmap_params.yaml" command="load" />
+	<rosparam file="$(find kairobot)/param/navigation/$(env KAIBASE)/base_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find kairobot)/param/navigation/move_base_params.yaml" command="load" />
+  </node>
+</launch>
