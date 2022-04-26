@@ -1,0 +1,1 @@
+rosrun map_server map_saver -f Health_RetailService_Robot_ROOM

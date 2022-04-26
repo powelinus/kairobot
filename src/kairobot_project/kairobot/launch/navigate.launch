@@ -1,0 +1,10 @@
+<launch>
+  <include file="$(find kairobot)/launch/lidar/$(env KAILIDAR).launch" />
+  <arg name="map_file" default="$(find kairobot)/maps/revisiMapt6.yaml"/>
+  <node pkg="map_server" name="map_server"  type="map_server" args="$(arg map_file)" />
+  <include file="$(find kairobot)/launch/bringup.launch" />
+  <include file="$(find kairobot)/launch/amcl.launch" />
+  <include file="$(find kairobot)/param/navigation/move_base.xml" />
+  <include file="$(find frontier_exploration)/launch/global_map.launch" />
+
+</launch>
