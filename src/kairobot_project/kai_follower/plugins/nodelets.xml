@@ -1,0 +1,7 @@
+<library path="lib/libkai_follower">
+  <class name="kai_follower/KaiFollower" type="kai_follower::KaiFollower" base_class_type="nodelet::Nodelet">
+    <description>
+      The rikirobot people follower node.
+    </description>
+  </class>
+</library> 
