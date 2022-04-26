@@ -1,0 +1,4 @@
+- git:
+    local-name: kai_pid
+    uri: 'https://github.com/ykevin/kai_pid.git
+    version: indigo
